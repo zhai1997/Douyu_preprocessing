@@ -7,7 +7,7 @@ The original data are Msg (bullet chat), Streamer (information about the influen
 - Msg contains a lot of dirty records
 
 Our methods to solve the problems above are:
-1. Imported two small data sets into MySQL database.
+1. Imported two small data sets Follower and Streamer into MySQL database.
 2. Joined the two small tables.
 3. Analyzed data got in 2, and determined the data of interest.
 4. Filtered the data with Python in advance, we only keep data of interest. In this step we detected dirty records, deleted them and kept down the information of the row we deleted.
