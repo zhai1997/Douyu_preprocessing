@@ -23,7 +23,7 @@ These two steps are easy.
 - Then merged the tables. [Codes](small_datasets/join_features.sql)
 
 ### Determined the data of interest
-- Explored the distribution of followers of streamers, blocked by the types of streamers. [star_type](distributions/task1.sql), [followers](distributions/task1.sql),  [percentile of followers](distributions/task1.sql), [percentile of followers by star_type](distributions/task1.sql), [check if the percentile is right](distributions/check.sql)
+- Explored the distribution of followers of streamers, blocked by the types of streamers. [star_type](distributions/task1.sql), [followers](distributions/task2.sql),  [percentile of followers](distributions/task31.sql), [percentile of followers by star_type](distributions/task32.sql), [check if the percentile is right](distributions/check.sql)
 - Selected two types of streamers, and we want to compare the top and middle level streamers.
 - Decided to only consider the lives between 2020-12-11 and 2020-12-14.
 
