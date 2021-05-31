@@ -10,7 +10,7 @@ Our methods to solve the problems above are:
 1. Imported two small data sets Follower and Streamer into MySQL database.
 2. Joined the two small tables.
 3. Analyzed data got in 2, and determined the data of interest.
-4. Filtered the data with Python in advance, we only keep data of interest. In this step we detected dirty records, deleted them and kept down the information of the row we deleted.
+4. Filtered the data with Python in advance, we only kept data of interest. In this step we detected dirty records, deleted them and kept down the information of the row we deleted.
 5. Further broke down the big table into several small tables and join each small table with the table we got in 3.
 6. Used Google API to calculate the sentiment and joined the results with the table in 5.
 
