@@ -3,17 +3,18 @@ This document describes the pre-processing of large data in the Douyu project wi
 
 ### Whole picture
 The original data are Msg (bullet chat), Streamer (information about the influencer), Star_live (information about one live), and Follower (the number of followers for each influencer). They are all in txt format. The main challenges are:
+
 - Msg and Start_live are over 100GB, which causes a lot of trouble for the processing
 - Msg contains a lot of dirty records
 
 Our methods to solve the problems above are:
+
 1. Imported two small data sets Follower and Streamer into MySQL database.
 2. Joined the two small tables.
-3. Analyzed data got in 2, and determined the data of interest.
+3. Analyzed the distributions of data we got in Step 2 to determine the data of interest.
 4. Filtered the data with Python in advance, we only kept data of interest. In this step we detected dirty records, deleted them and kept down the information of the row we deleted.
-5. Further broke down the big table into several small tables and joined each small table with the table we got in Step 2.
+5. Further broke down the big table into several small views and joined each small view with the table we got in Step 2.
 6. Used Google API to calculate the sentiment and joined the results with the table in Step 5.
-
 
 ### Imported and joined two small data sets
 These two steps are easy. 
