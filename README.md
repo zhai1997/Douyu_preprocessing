@@ -19,16 +19,16 @@ Our methods to solve the problems above are:
 These two steps are easy. 
 - Walked through the directories with Python to generate SQL commands, and ran the SQL commands. [Codes](small_datasets/import_data.py)
 - Created tables in MySQL. [Codes](small_datasets/create_table.sql)
-- Originally, Follower was a long table with records of different years in different rows. We changed the structure of it to make the records of one streamer in the a single row. [Codes](small_datasets/change_the_structure.sql)
+- Originally, Follower was a long table with records of different years in different rows. We changed the structure of it to make the records of one streamer in a single row. [Codes](small_datasets/change_the_structure.sql)
 - Then merged the tables. [Codes](small_datasets/join_features.sql)
 
 ### Determined the data of interest
 - Explored the distribution of followers of streamers, blocked by the types of streamers. [star_type](distributions/task1.sql), [followers](distributions/task2.sql),  [percentile of followers](distributions/task31.sql), [percentile of followers by star_type](distributions/task32.sql), [check if the percentile is right](distributions/check.sql)
-- Selected two types of streamers, and we want to compare the top and middle level streamers.
+- Selected two types of streamers, in order to compare the top and middle level streamers.
 - Decided to only consider the lives between 2020-12-11 and 2020-12-14.
 
 ### Filtered big data sets
-- Msg: The mistakes of data are various, and we cannot exhaust them, so we had to make the Exceptions happen, and used Python to capture the Exception. Then we dealt only with the manageable Exceptions while dropping and keeping down other Exceptions. [Codes](filter/top_mid.py)
+- Msg: The mistakes of data are various, and it is impossible to exhaust them, so we had to let the Exceptions happen, and used Python to capture the Exception. Then we dealt only with the manageable Exceptions while dropping and taking down the other Exceptions. [Codes](filter/top_mid.py)
 - Start_live: Filtered Start_live data in a similar manner. [Codes](filter/to_csv_start_live.py)
 - Imported the filtered data into MySQL database. [Codes](filter/import_csv.py)
 
