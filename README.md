@@ -1,5 +1,5 @@
 # Douyu_preprocessing
-This document describes the pre-processing of large data in the Douyu project with limited resources. In order to finish this task, we had to drop data that are irrelevant to our research goal and break down the task into several steps. So, it is necessary to keep down the considerations when we decided to drop data and the relationship between several steps, so that we can double check the codes when we have some new findings and it is useful if someone wants to join later and wonders what we have done.
+This document describes the pre-processing of large data in the Douyu project with limited resources. In order to finish this task, we had to drop data that are irrelevant with our research goal and break down the task into several steps. So, it is necessary to keep down the considerations when we decided to drop data and the relationship between several steps, so that we can double check the codes when we have some new findings and it is useful if someone wants to join later and wonders what we have done.
 
 ### Whole picture
 The original data are Msg (bullet chat), Streamer (information about the influencer), Star_live (information about one live), and Follower (the number of followers for each influencer). They are all in txt format. The main challenges are:
