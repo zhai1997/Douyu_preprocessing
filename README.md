@@ -11,8 +11,8 @@ Our methods to solve the problems above are:
 2. Joined the two small tables.
 3. Analyzed data got in 2, and determined the data of interest.
 4. Filtered the data with Python in advance, we only kept data of interest. In this step we detected dirty records, deleted them and kept down the information of the row we deleted.
-5. Further broke down the big table into several small tables and joined each small table with the table we got in 3.
-6. Used Google API to calculate the sentiment and joined the results with the table in 5.
+5. Further broke down the big table into several small tables and joined each small table with the table we got in Step 2.
+6. Used Google API to calculate the sentiment and joined the results with the table in Step 5.
 
 
 ### Imported and joined two small data sets
