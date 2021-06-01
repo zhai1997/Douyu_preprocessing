@@ -79,7 +79,7 @@ def get_sentiment(text):
     return sentiment.score, sentiment.magnitude
 
 gred['score']=np.nan
-gred['manitude']=np.nan
+gred['magnitude']=np.nan
 for i in gred.index:
     if i%1000==0: print(i)
     gred.loc[i,'score'], gred.loc[i,'magnitude']=get_sentiment(gred.loc[i,'content'])
